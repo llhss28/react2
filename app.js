@@ -1,13 +1,13 @@
 import React from "react"
-import Product from "./Product"
-import vacationSpots from "./Vacation"
+import Friend from "./Friend"
+import pets from "./pets"
 
 function App(){
-    const test = vacationSpots.map(spots => <Product product = {spots}/>)
+    const friends = pets.map(friend => <Friend name = {friend.name} age = {friend.age}  pets = {friend.pets}/>)
 
     return(
         <div>
-            {test}
+            {friends}
         </div>
     )
 }
