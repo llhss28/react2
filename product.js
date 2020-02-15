@@ -1,6 +1,6 @@
 import React from "react"
 
-function product(props){
+function Product(props){
     return(
         <div>
             <h1>{props.product.place}</h1>
@@ -10,4 +10,4 @@ function product(props){
     )
 }
 
-export default product
+export default Product

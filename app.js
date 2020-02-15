@@ -1,9 +1,9 @@
 import React from "react"
-import Product from "./product"
-import vacationSpots from "./vacation"
+import Product from "./Product"
+import vacationSpots from "./Vacation"
 
 function App(){
-    const test = vacation.map(spots => <Product product = {spots}/>)
+    const test = vacationSpots.map(spots => <Product product = {spots}/>)
 
     return(
         <div>
