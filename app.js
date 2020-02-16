@@ -1,13 +1,19 @@
 import React from "react"
-import Friend from "./Friend"
-import pets from "./pets"
+import css from "./style.css"
+import BlogPost from "./blogpost"
+import blog from "./blog"
+import Header from "./header"
+import Footer from "./footer"
+
 
 function App(){
-    const friends = pets.map(friend => <Friend name = {friend.name} age = {friend.age}  pets = {friend.pets}/>)
+    const blogspot = blog.map(items => <BlogPost title = {items.title} subTitle = {items.subTitle}  author = {items.author} date = {items.date}/>)
 
     return(
         <div>
-            {friends}
+            <Header />
+            {blogspot}
+            <Footer />
         </div>
     )
 }
